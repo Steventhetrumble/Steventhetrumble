@@ -14,22 +14,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="easyGame.js"></script>
 
+
   <style type="text/css">
+  canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
 
 
   </style>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 </head>
 <body>
+  <div id="nav-placeholder"></div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("./nav.html");
+  });
+  </script>
 
 <div class="container">
   <div class="jumbotron" id = 'easygamearea' >
+    <div id="canvascontainer">
+
+    </div>
     <script>
       window.addEventListener('load', startGame());
     </script>
