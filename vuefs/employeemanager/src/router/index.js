@@ -10,22 +10,22 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: './',
       name: 'dashboard',
       component: Dashboard
     },
     {
-      path: '/new',
+      path: './new',
       name: 'new-employee',
       component: NewEmployee
     },
     {
-      path: '/edit/:employee_id',
+      path: './edit/:employee_id',
       name: 'edit-employee',
       component: EditEmployee
     },
     {
-      path: '/:employee_id',
+      path: './:employee_id',
       name: 'view-employee',
       component: ViewEmployee
     }
