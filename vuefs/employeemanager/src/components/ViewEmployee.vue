@@ -64,7 +64,7 @@ export default{
         .get().then(querySnapshot => {
           querySnapshot.forEach(doc => {
             doc.ref.delete()
-            this.$router.push('./')
+            this.$router.push('/')
           })
         })
       }
